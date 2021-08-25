@@ -8,8 +8,7 @@ Buscador avanzado con múltiples filtros y con posibilidad de ordenar todos los 
 
 2) Los parámetros para filtrar son los siguientes :
 
-
-   ``/products?name=1``
+``/products?name=1``
 
   `` /products?surname=1``
 
@@ -17,7 +16,7 @@ Buscador avanzado con múltiples filtros y con posibilidad de ordenar todos los 
 
   `` /products?priceFrom=29027&priceTo=29029``
    
-   Se pueden unificar todos los parámetros , también ordenar y ordenar de forma ascendente y descendente.
+   Se pueden filtrar con todos los parámetros , también ordenar de forma ascendente y descendente.
 
 3) Para ordenar sería de la siguiente forma :
 
