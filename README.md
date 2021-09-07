@@ -25,3 +25,17 @@ Buscador avanzado con múltiples filtros y con posibilidad de ordenar todos los 
 Como se puede ver es un buscador bastante avanzado.
 
 Lo interestante de este buscador es que podemos ver distintos filtros como int , BigDecimal y String. (Podemos mirarlo en la entity Product)
+
+Query creation
+
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
+
+Using @Query
+
+Using Sort and 
+
+ExampleMatcher
+
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#query-by-example.matchers
+
+https://vladmihalcea.com/get-sql-from-jpql-or-criteria/ 

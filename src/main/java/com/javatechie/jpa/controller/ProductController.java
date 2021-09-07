@@ -19,9 +19,9 @@ public class ProductController {
     private ProductService service;
 
     @GetMapping
-    private ResponseEntity<Page<ProductDTO>> findAllProductsWithPageable(ProductWrapper productWrapper,
+    private ResponseEntity<Page<ProductDTO>> findAllNotSpecification(ProductWrapper productWrapper,
                                                                          @PageableDefault(page = 0, size = 10) Pageable pageable) {
-        return ResponseEntity.ok(service.findAllProductsWithPageable(pageable,productWrapper));
+        return ResponseEntity.ok(service.AndSpecification(pageable,productWrapper));
     }
 
 }

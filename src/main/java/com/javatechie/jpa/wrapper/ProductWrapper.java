@@ -14,6 +14,7 @@ public class ProductWrapper {
     private String name;
     private String surname;
     private String quantity;
+    private BigDecimal price;
     private BigDecimal priceFrom;
     private BigDecimal priceTo;
 

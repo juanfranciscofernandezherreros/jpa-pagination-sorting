@@ -3,13 +3,14 @@ package com.javatechie.jpa.repository;
 import com.javatechie.jpa.entity.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 
 import java.math.BigDecimal;
 
-public interface ProductRepository extends JpaRepository<Product,Integer> {
+public interface ProductRepository extends PagingAndSortingRepository<Product, Long>, JpaSpecificationExecutor<Product> {
 
     /**JPQL**/
     @Query("SELECT c FROM Product c" +
@@ -23,4 +24,5 @@ public interface ProductRepository extends JpaRepository<Product,Integer> {
                                @Param("priceTo") BigDecimal priceTo,
                                @Param("quantity") String quantity,
                                Pageable pageable);
+
 }
